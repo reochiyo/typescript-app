@@ -1,6 +1,6 @@
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
-import { Todo } from "../types";
+import { Todo } from "./types";
 const app = express();
 const port = 3001;
 
