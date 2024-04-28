@@ -9,22 +9,35 @@ This app created by Typescript.
 - Vite.js 5.2.0
 - Express.js 4.19.2
 
-## Installation
-Install dependencies : 
+## Insitial Setup
+1. Clone:
 ```
-$ npm install 
+$ git clone https://github.com/reochiyo/typescript-app.git
 ```
-
-## Usage
-Set up frontend(port:5173):
+2. Generate and start containers:
 ```
-$ npm run dev
+$ docker compose up -d --build
 ```
-Set up backend(port:3001):
+3. Access:
 ```
-$ npm run dev
+$ http://localhost:3000
 ```
 
+## Routine Action
+- Start Containers:
+```
+$ docker compose start
+```
+- Stop Containers:
+```
+$ docker compose stop
+```
+
+## Extra:
+- Stop and remove containers along with volumes:
+```
+$ docker compose down -v
+```
 
 ## License
 Distributed under the MIT license. See LICENSE for details.
