@@ -1,7 +1,7 @@
 # TYPESCRIPT-APP
 
 ## Description
-This app created by Typescript.
+This app is created by Typescript.
 
 ## Requirements
 - Typescript 5.4.5
