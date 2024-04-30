@@ -4,7 +4,7 @@ import { MyTwitter } from "./types";
 const app = express();
 const port = 3001;
 
-app.use(cors());
+app.use(cors({ origin: "http://localhost:3000" }));
 
 const sampleData = [
     { id: 1, text: "牛乳を買う"},
