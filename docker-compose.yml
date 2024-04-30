@@ -27,3 +27,21 @@ services:
       TZ: Asia/Tokyo
     ports:
       - "3001:3001"
+    depends_on:
+      - typescript_app_db
+  typescript_app_db:
+    container_name: typescript_app_db 
+    image: mysql:8.3.0
+    platform: linux/amd64
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: typescript_app_db
+      MYSQL_PASSWORD: password
+      TZ: Asia/Tokyo
+    ports:
+      - 3308:3306
+    volumes:
+      - typescript_app_db_data:/var/lib/mysql
+    restart: always
+volumes:
+  typescript_app_db_data:
