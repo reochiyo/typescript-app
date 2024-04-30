@@ -1,1 +1,1 @@
-export type Todo = { id: number; title: string; completed: boolean };
+export type MyTwitter = { id: number; text: string };
