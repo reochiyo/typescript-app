@@ -11,10 +11,11 @@ let myTwitterList: MyTwitter[] = [];
 
 async function main() {
     const con = await mysql.createConnection({
-        host: "172.29.0.2", //dockerのMySQLコンテナのIPアドレス
+        host: "typescript_app_db", // Docker Composeのサービス名
         user: "root",
         password: "root",
         database: "typescript_app_db",
+        port: 3306,
     });
     const [rows] = await con.execute('SELECT * FROM texts');
     console.log(rows);
