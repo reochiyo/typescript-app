@@ -9,8 +9,10 @@ export default defineConfig({
     host: true,
     proxy: {
       '/api': {
+        // backendのURLを指定
         target: 'http://backend:3001',
         changeOrigin: true,
+        // /apiを削除してリクエストを送る
         rewrite: (path) => path.replace(/^\/api/, '')
       }
     }
