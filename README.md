@@ -33,7 +33,7 @@ $ docker compose start
 $ docker compose stop
 ```
 
-## Extra:
+## Tips:
 - Stop and remove containers along with volumes:
 ```
 $ docker compose down -v
